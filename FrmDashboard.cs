@@ -14,5 +14,45 @@ namespace Ricarte_POO_
         {
             InitializeComponent();
         }
+
+        private void cuiPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void cuiTextBox1_ContentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnHome_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnEstudiantes_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnGrupos_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMaterias_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalificaciones_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void hopeButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

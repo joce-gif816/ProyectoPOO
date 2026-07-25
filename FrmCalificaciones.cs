@@ -6,5 +6,10 @@ namespace Ricarte_POO_
         {
             InitializeComponent();
         }
+
+        private void FrmCalificaciones_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
