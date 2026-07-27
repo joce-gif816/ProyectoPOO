@@ -8,16 +8,11 @@ using System.Windows.Forms;
 
 namespace Ricarte_POO_
 {
-    public partial class FrmLogin : Form
+    public partial class Frm3Alumnos : Form
     {
-        public FrmLogin()
+        public Frm3Alumnos()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

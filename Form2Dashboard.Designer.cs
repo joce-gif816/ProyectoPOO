@@ -1,6 +1,6 @@
 ﻿namespace Ricarte_POO_
 {
-    partial class FrmDashboard
+    partial class Form2Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -29,17 +29,24 @@
         private void InitializeComponent()
         {
             panel1 = new Panel();
+            hopeButton2 = new ReaLTaiizor.Controls.HopeButton();
             hopeButton1 = new ReaLTaiizor.Controls.HopeButton();
             btnCalificaciones = new ReaLTaiizor.Controls.HopeButton();
             btnHome = new ReaLTaiizor.Controls.HopeButton();
             btnMaterias = new ReaLTaiizor.Controls.HopeButton();
+            btnAlumnos = new ReaLTaiizor.Controls.HopeButton();
             btnGrupos = new ReaLTaiizor.Controls.HopeButton();
-            btnEstudiantes = new ReaLTaiizor.Controls.HopeButton();
             panelContenido = new Panel();
+            cuiPanel1 = new HartUI.Controls.cuiPanel();
+            label12 = new Label();
+            lbAlReprobados = new Label();
+            label11 = new Label();
             pictureBox1 = new PictureBox();
             cuiPanel6 = new HartUI.Controls.cuiPanel();
             label13 = new Label();
             cuiPanel5 = new HartUI.Controls.cuiPanel();
+            lbProfRegistrados = new Label();
+            label3 = new Label();
             label14 = new Label();
             cuiPanel4 = new HartUI.Controls.cuiPanel();
             lbCantidadMaterias = new Label();
@@ -55,22 +62,15 @@
             label4 = new Label();
             label5 = new Label();
             lbCantidadAlumno = new Label();
-            hopeButton2 = new ReaLTaiizor.Controls.HopeButton();
-            label3 = new Label();
-            label7 = new Label();
-            label11 = new Label();
-            label15 = new Label();
-            label12 = new Label();
-            cuiPanel1 = new HartUI.Controls.cuiPanel();
             panel1.SuspendLayout();
             panelContenido.SuspendLayout();
+            cuiPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             cuiPanel6.SuspendLayout();
             cuiPanel5.SuspendLayout();
             cuiPanel4.SuspendLayout();
             cuiPanel3.SuspendLayout();
             cuiPanel2.SuspendLayout();
-            cuiPanel1.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -81,12 +81,31 @@
             panel1.Controls.Add(btnCalificaciones);
             panel1.Controls.Add(btnHome);
             panel1.Controls.Add(btnMaterias);
-            panel1.Controls.Add(btnEstudiantes);
+            panel1.Controls.Add(btnAlumnos);
             panel1.Controls.Add(btnGrupos);
             panel1.Location = new Point(-1, 0);
             panel1.Name = "panel1";
             panel1.Size = new Size(418, 1024);
             panel1.TabIndex = 0;
+            // 
+            // hopeButton2
+            // 
+            hopeButton2.BorderColor = Color.FromArgb(220, 223, 230);
+            hopeButton2.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            hopeButton2.DangerColor = Color.FromArgb(245, 108, 108);
+            hopeButton2.DefaultColor = Color.FromArgb(255, 255, 255);
+            hopeButton2.Font = new Font("Segoe UI Symbol", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            hopeButton2.HoverTextColor = Color.FromArgb(48, 49, 51);
+            hopeButton2.InfoColor = Color.FromArgb(144, 147, 153);
+            hopeButton2.Location = new Point(92, 809);
+            hopeButton2.Name = "hopeButton2";
+            hopeButton2.PrimaryColor = Color.FromArgb(144, 147, 153);
+            hopeButton2.Size = new Size(232, 44);
+            hopeButton2.SuccessColor = Color.FromArgb(103, 194, 58);
+            hopeButton2.TabIndex = 4;
+            hopeButton2.Text = "Profesores";
+            hopeButton2.TextColor = Color.White;
+            hopeButton2.WarningColor = Color.FromArgb(230, 162, 60);
             // 
             // hopeButton1
             // 
@@ -166,6 +185,26 @@
             btnMaterias.TextColor = Color.White;
             btnMaterias.WarningColor = Color.FromArgb(230, 162, 60);
             // 
+            // btnAlumnos
+            // 
+            btnAlumnos.BorderColor = Color.FromArgb(220, 223, 230);
+            btnAlumnos.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            btnAlumnos.DangerColor = Color.FromArgb(245, 108, 108);
+            btnAlumnos.DefaultColor = Color.FromArgb(255, 255, 255);
+            btnAlumnos.Font = new Font("Segoe UI Symbol", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAlumnos.HoverTextColor = Color.FromArgb(48, 49, 51);
+            btnAlumnos.InfoColor = Color.FromArgb(144, 147, 153);
+            btnAlumnos.Location = new Point(92, 532);
+            btnAlumnos.Name = "btnAlumnos";
+            btnAlumnos.PrimaryColor = Color.FromArgb(144, 147, 153);
+            btnAlumnos.Size = new Size(232, 44);
+            btnAlumnos.SuccessColor = Color.FromArgb(103, 194, 58);
+            btnAlumnos.TabIndex = 0;
+            btnAlumnos.Text = "Alumnos";
+            btnAlumnos.TextColor = Color.White;
+            btnAlumnos.WarningColor = Color.FromArgb(230, 162, 60);
+            btnAlumnos.Click += btnEstudiantes_Click;
+            // 
             // btnGrupos
             // 
             btnGrupos.BorderColor = Color.FromArgb(220, 223, 230);
@@ -186,26 +225,6 @@
             btnGrupos.WarningColor = Color.FromArgb(230, 162, 60);
             btnGrupos.Click += btnGrupos_Click;
             // 
-            // btnEstudiantes
-            // 
-            btnEstudiantes.BorderColor = Color.FromArgb(220, 223, 230);
-            btnEstudiantes.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            btnEstudiantes.DangerColor = Color.FromArgb(245, 108, 108);
-            btnEstudiantes.DefaultColor = Color.FromArgb(255, 255, 255);
-            btnEstudiantes.Font = new Font("Segoe UI Symbol", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnEstudiantes.HoverTextColor = Color.FromArgb(48, 49, 51);
-            btnEstudiantes.InfoColor = Color.FromArgb(144, 147, 153);
-            btnEstudiantes.Location = new Point(92, 532);
-            btnEstudiantes.Name = "btnEstudiantes";
-            btnEstudiantes.PrimaryColor = Color.FromArgb(144, 147, 153);
-            btnEstudiantes.Size = new Size(232, 44);
-            btnEstudiantes.SuccessColor = Color.FromArgb(103, 194, 58);
-            btnEstudiantes.TabIndex = 0;
-            btnEstudiantes.Text = "Estudiantes";
-            btnEstudiantes.TextColor = Color.White;
-            btnEstudiantes.WarningColor = Color.FromArgb(230, 162, 60);
-            btnEstudiantes.Click += btnEstudiantes_Click;
-            // 
             // panelContenido
             // 
             panelContenido.BackColor = Color.FromArgb(30, 34, 40);
@@ -223,6 +242,56 @@
             panelContenido.Size = new Size(1482, 1024);
             panelContenido.TabIndex = 1;
             // 
+            // cuiPanel1
+            // 
+            cuiPanel1.Controls.Add(label12);
+            cuiPanel1.Controls.Add(lbAlReprobados);
+            cuiPanel1.Controls.Add(label11);
+            cuiPanel1.Location = new Point(101, 615);
+            cuiPanel1.Name = "cuiPanel1";
+            cuiPanel1.OutlineThickness = 1F;
+            cuiPanel1.PanelColor = Color.FromArgb(43, 49, 57);
+            cuiPanel1.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
+            cuiPanel1.Rounding = new Padding(25);
+            cuiPanel1.Size = new Size(246, 337);
+            cuiPanel1.TabIndex = 9;
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.FromArgb(43, 49, 57);
+            label12.Font = new Font("Segoe UI Symbol", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label12.ForeColor = Color.White;
+            label12.Location = new Point(34, 71);
+            label12.Name = "label12";
+            label12.Size = new Size(141, 30);
+            label12.TabIndex = 1;
+            label12.Text = "Reprobados";
+            // 
+            // lbAlReprobados
+            // 
+            lbAlReprobados.AutoSize = true;
+            lbAlReprobados.BackColor = Color.FromArgb(43, 49, 57);
+            lbAlReprobados.Font = new Font("Segoe UI Symbol", 26F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbAlReprobados.ForeColor = Color.FromArgb(96, 145, 255);
+            lbAlReprobados.Location = new Point(34, 128);
+            lbAlReprobados.Name = "lbAlReprobados";
+            lbAlReprobados.Size = new Size(59, 70);
+            lbAlReprobados.TabIndex = 2;
+            lbAlReprobados.Text = "0";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.FromArgb(43, 49, 57);
+            label11.Font = new Font("Segoe UI Symbol", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label11.ForeColor = Color.White;
+            label11.Location = new Point(34, 39);
+            label11.Name = "label11";
+            label11.Size = new Size(104, 30);
+            label11.TabIndex = 0;
+            label11.Text = "Alumnos";
+            // 
             // pictureBox1
             // 
             pictureBox1.Image = Properties.Resources.user4;
@@ -236,13 +305,13 @@
             // cuiPanel6
             // 
             cuiPanel6.Controls.Add(label13);
-            cuiPanel6.Location = new Point(754, 615);
+            cuiPanel6.Location = new Point(738, 615);
             cuiPanel6.Name = "cuiPanel6";
             cuiPanel6.OutlineThickness = 1F;
             cuiPanel6.PanelColor = Color.FromArgb(43, 49, 57);
             cuiPanel6.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
             cuiPanel6.Rounding = new Padding(25);
-            cuiPanel6.Size = new Size(614, 337);
+            cuiPanel6.Size = new Size(630, 337);
             cuiPanel6.TabIndex = 7;
             // 
             // label13
@@ -260,24 +329,49 @@
             // cuiPanel5
             // 
             cuiPanel5.BackColor = Color.FromArgb(43, 49, 57);
-            cuiPanel5.Controls.Add(label7);
+            cuiPanel5.Controls.Add(lbProfRegistrados);
             cuiPanel5.Controls.Add(label3);
             cuiPanel5.Controls.Add(label14);
-            cuiPanel5.Location = new Point(101, 615);
+            cuiPanel5.Location = new Point(418, 615);
             cuiPanel5.Name = "cuiPanel5";
             cuiPanel5.OutlineThickness = 1F;
             cuiPanel5.PanelColor = Color.FromArgb(43, 49, 57);
             cuiPanel5.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
             cuiPanel5.Rounding = new Padding(25);
-            cuiPanel5.Size = new Size(265, 337);
+            cuiPanel5.Size = new Size(246, 337);
             cuiPanel5.TabIndex = 6;
+            // 
+            // lbProfRegistrados
+            // 
+            lbProfRegistrados.AutoSize = true;
+            lbProfRegistrados.BackColor = Color.FromArgb(43, 49, 57);
+            lbProfRegistrados.Font = new Font("Segoe UI Symbol", 26F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbProfRegistrados.ForeColor = Color.FromArgb(96, 145, 255);
+            lbProfRegistrados.Location = new Point(29, 128);
+            lbProfRegistrados.Name = "lbProfRegistrados";
+            lbProfRegistrados.Size = new Size(59, 70);
+            lbProfRegistrados.TabIndex = 2;
+            lbProfRegistrados.Text = "0";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.BackColor = Color.FromArgb(43, 49, 57);
+            label3.Font = new Font("Segoe UI Symbol", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.ForeColor = Color.White;
+            label3.Location = new Point(29, 71);
+            label3.Name = "label3";
+            label3.Size = new Size(137, 30);
+            label3.TabIndex = 1;
+            label3.Text = "Registrados";
             // 
             // label14
             // 
             label14.AutoSize = true;
+            label14.BackColor = Color.FromArgb(43, 49, 57);
             label14.Font = new Font("Segoe UI Symbol", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
             label14.ForeColor = Color.White;
-            label14.Location = new Point(28, 30);
+            label14.Location = new Point(29, 39);
             label14.Name = "label14";
             label14.Size = new Size(126, 30);
             label14.TabIndex = 0;
@@ -455,102 +549,22 @@
             lbCantidadAlumno.TabIndex = 9;
             lbCantidadAlumno.Text = "0";
             // 
-            // hopeButton2
-            // 
-            hopeButton2.BorderColor = Color.FromArgb(220, 223, 230);
-            hopeButton2.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            hopeButton2.DangerColor = Color.FromArgb(245, 108, 108);
-            hopeButton2.DefaultColor = Color.FromArgb(255, 255, 255);
-            hopeButton2.Font = new Font("Segoe UI Symbol", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            hopeButton2.HoverTextColor = Color.FromArgb(48, 49, 51);
-            hopeButton2.InfoColor = Color.FromArgb(144, 147, 153);
-            hopeButton2.Location = new Point(92, 809);
-            hopeButton2.Name = "hopeButton2";
-            hopeButton2.PrimaryColor = Color.FromArgb(144, 147, 153);
-            hopeButton2.Size = new Size(232, 44);
-            hopeButton2.SuccessColor = Color.FromArgb(103, 194, 58);
-            hopeButton2.TabIndex = 4;
-            hopeButton2.Text = "Profesores";
-            hopeButton2.TextColor = Color.White;
-            hopeButton2.WarningColor = Color.FromArgb(230, 162, 60);
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Symbol", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.White;
-            label3.Location = new Point(28, 60);
-            label3.Name = "label3";
-            label3.Size = new Size(137, 30);
-            label3.TabIndex = 1;
-            label3.Text = "Registrados";
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI Symbol", 26F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label7.ForeColor = Color.FromArgb(96, 145, 255);
-            label7.Location = new Point(28, 102);
-            label7.Name = "label7";
-            label7.Size = new Size(59, 70);
-            label7.TabIndex = 2;
-            label7.Text = "0";
-            // 
-            // label11
-            // 
-            label11.AutoSize = true;
-            label11.Location = new Point(45, 147);
-            label11.Name = "label11";
-            label11.Size = new Size(69, 25);
-            label11.TabIndex = 3;
-            label11.Text = "label11";
-            // 
-            // label15
-            // 
-            label15.AutoSize = true;
-            label15.Location = new Point(142, 128);
-            label15.Name = "label15";
-            label15.Size = new Size(69, 25);
-            label15.TabIndex = 5;
-            label15.Text = "label15";
-            // 
-            // label12
-            // 
-            label12.AutoSize = true;
-            label12.Location = new Point(87, 60);
-            label12.Name = "label12";
-            label12.Size = new Size(69, 25);
-            label12.TabIndex = 4;
-            label12.Text = "label12";
-            // 
-            // cuiPanel1
-            // 
-            cuiPanel1.Controls.Add(label11);
-            cuiPanel1.Controls.Add(label12);
-            cuiPanel1.Controls.Add(label15);
-            cuiPanel1.Location = new Point(432, 615);
-            cuiPanel1.Name = "cuiPanel1";
-            cuiPanel1.OutlineThickness = 1F;
-            cuiPanel1.PanelColor = Color.FromArgb(43, 49, 57);
-            cuiPanel1.PanelOutlineColor = Color.FromArgb(64, 128, 128, 128);
-            cuiPanel1.Rounding = new Padding(8);
-            cuiPanel1.Size = new Size(253, 337);
-            cuiPanel1.TabIndex = 9;
-            // 
-            // FrmDashboard
+            // Form2Dashboard
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1898, 1024);
             Controls.Add(panelContenido);
             Controls.Add(panel1);
-            Name = "FrmDashboard";
+            Name = "Form2Dashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form5";
             WindowState = FormWindowState.Maximized;
             panel1.ResumeLayout(false);
             panelContenido.ResumeLayout(false);
             panelContenido.PerformLayout();
+            cuiPanel1.ResumeLayout(false);
+            cuiPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             cuiPanel6.ResumeLayout(false);
             cuiPanel6.PerformLayout();
@@ -562,8 +576,6 @@
             cuiPanel3.PerformLayout();
             cuiPanel2.ResumeLayout(false);
             cuiPanel2.PerformLayout();
-            cuiPanel1.ResumeLayout(false);
-            cuiPanel1.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -572,7 +584,7 @@
         private Panel panel1;
         private Panel panelContenido;
         private ReaLTaiizor.Controls.HopeButton btnHome;
-        private ReaLTaiizor.Controls.HopeButton btnEstudiantes;
+        private ReaLTaiizor.Controls.HopeButton btnAlumnos;
         private ReaLTaiizor.Controls.HopeButton btnCalificaciones;
         private ReaLTaiizor.Controls.HopeButton btnMaterias;
         private ReaLTaiizor.Controls.HopeButton btnGrupos;
@@ -598,10 +610,10 @@
         private Label label13;
         private Label label14;
         private ReaLTaiizor.Controls.HopeButton hopeButton2;
-        private Label label7;
+        private Label lbProfRegistrados;
         private HartUI.Controls.cuiPanel cuiPanel1;
         private Label label11;
         private Label label12;
-        private Label label15;
+        private Label lbAlReprobados;
     }
 }
