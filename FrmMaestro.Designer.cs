@@ -1,6 +1,6 @@
 ﻿namespace Ricarte_POO_
 {
-    partial class Frm5Materias
+    partial class FrmMaestro
     {
         /// <summary>
         /// Required designer variable.
@@ -30,14 +30,14 @@
         {
             SuspendLayout();
             // 
-            // FrmMaterias
+            // FrmMaestro
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1258, 664);
-            Name = "FrmMaterias";
+            Name = "FrmMaestro";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Form3";
+            Text = "Form2";
             WindowState = FormWindowState.Maximized;
             ResumeLayout(false);
         }

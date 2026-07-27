@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Ricarte_POO_
 {
-    public partial class Frm5Materias : Form
+    public partial class FrmMaterias : Form
     {
-        public Frm5Materias()
+        public FrmMaterias()
         {
             InitializeComponent();
         }

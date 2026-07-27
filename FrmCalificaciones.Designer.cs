@@ -1,6 +1,6 @@
 ﻿namespace Ricarte_POO_
 {
-    partial class Frm4Calificaciones
+    partial class FrmCalificaciones
     {
         /// <summary>
         ///  Required designer variable.

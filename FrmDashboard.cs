@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace Ricarte_POO_
 {
-    public partial class Form2Dashboard : Form
+    public partial class FrmDashboard : Form
     {
-        public Form2Dashboard()
+        public FrmDashboard()
         {
             InitializeComponent();
         }
