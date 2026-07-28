@@ -1,6 +1,6 @@
 ﻿namespace Ricarte_POO_
 {
-    partial class FrmMaterias
+    partial class Frm5Materias
     {
         /// <summary>
         /// Required designer variable.

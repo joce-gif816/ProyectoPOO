@@ -1,8 +1,8 @@
 namespace Ricarte_POO_
 {
-    public partial class FrmCalificaciones : Form
+    public partial class Frm3Calificaciones : Form
     {
-        public FrmCalificaciones()
+        public Frm3Calificaciones()
         {
             InitializeComponent();
         }
